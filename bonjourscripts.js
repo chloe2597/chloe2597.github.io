@@ -1,5 +1,5 @@
 function ScoreQuiz(){
-  alert("in ScoreQuiz 5()");
+  alert("in ScoreQuiz 6()");
   ///===============================
     var TotalQuestions=4;
   var TotalCorrect=0;
@@ -59,6 +59,36 @@ function ScoreQuiz(){
     alert(message);
    
   }
+  
+  
+   var q4q = document.getElementById("q4q");
+  var q4qText = q4q.innerHTML;
+  
+  var q4 = document.getElementById("q4");
+  var q4UserAnswer = q4.value;
+  var q4Answer = "Parlez vous anglais?";
+  
+  if(q4UserAnswer === q4Answer){
+    var message = "Yes! " + q4Answer + " is French for " + q4qText;
+    alert(message);
+    TotalCorrect = TotalCorrect + 1;
+  }
+  else{
+    var message = "No! " + q4Answer + " is French for " + q4qText;
+    alert(message);
+  }
+  
+  
+  
+  
+  if(TotalQuestions === TotalCorrect){
+    alert("Congratulations! You got 100%!")
+  }
+  else{
+    var message = "You got " + TotalCorrect + " out of 4 questions ";
+    alert(message);
+  }
+  
   
   
   

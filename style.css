@@ -1,0 +1,55 @@
+.title{
+  color: Pink;
+  font-family:Lucida Console;
+  
+}
+
+.words{
+  color:White;
+  font-family: Courir New;
+  text-align:center;
+}
+
+body{
+  background-color:brown;
+  border-style: double;
+  border-color: white;
+  border-width: 15px;
+    
+}
+
+.title{
+  text-align:center;
+  font-family:Arial, Verdana
+}
+
+.link2 {
+  font-size: 30px;
+  text-align:center;
+}
+
+a:visited {
+  color:white;
+}
+
+.center{
+  text-align:center;
+}
+
+.table, th, td {
+  border: 1px solid black;
+  padding:5px;
+  text-align:center;  
+  margin:auto;
+  font-family:Courir New;
+}
+
+.image{
+  text-align:center;
+}
+
+.list{
+  text-align:left;
+  font-family: Courir New;
+  color:white
+}

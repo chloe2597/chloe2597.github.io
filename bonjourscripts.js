@@ -1,5 +1,5 @@
 function ScoreQuiz(){
-  alert("in ScoreQuiz 3()");
+  alert("in ScoreQuiz 4()");
   ///===============================
     var TotalQuestions=4;
   var TotalCorrect=0;

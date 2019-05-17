@@ -1,0 +1,46 @@
+.title{
+  color: tan;
+  font-size: 100px;
+  text-align:center;
+}
+.borderStyle{
+  border: 0.5px solid black;
+  
+}
+
+.borderStyle td{
+  border: 0.5px solid black;
+  
+}
+
+.imageMan{
+  width: 100px;
+}
+.imageBear{
+  width: 100px;
+}
+
+.borderStylemen{
+  border: 1px solid black;
+  table-align:left;
+  margin-left:auto;
+  
+}
+
+.borderStylemen td{
+  border: 0.5px solid black;
+}
+
+.imageSign{
+  margin-left:auto;
+  size: 100px;
+}
+
+.layoutTable{
+  width:100%;
+  
+  
+}
+.man1{
+
+}

@@ -1,33 +1,21 @@
-<div id=bonjour>
-  bonjour
-</div>
-<button onclick=show1(); >Show</button>
-<button onclick=hide1(); >Hide</button>
+#bonjour{
+  background-color:brown;
+}
 
-<div id=dogs>
-  dogs
-</div>
-<button onclick=show2(); >Show</button>
-<button onclick=hide2(); >Hide</button>
+#dogs{
+  background-color:pink;
+}
 
-<div id=cats>
-  cats
-</div>
-<button onclick=show3(); >Show</button>
-<button onclick=hide3(); >Hide</button>
+#cats{
+  background-color:brown;
+}
 
-<hr>
-<button onclick=showDogsHideCats(); >Show dogs, hide cats</button>
+#hello{
+  height:400px;
+  width:200px;
+}
 
-<button onclick=showCatsHideDogs(); >Show cats, hide dogs</button>
-
-<button onclick=Animate();>animate right</button>
-<button onclick=Animate1();>animate left</button>
-<button onclick=Animate2();>animate down</button>
-<button onclick=Animate3();>animate up</button>
-<button onclick=biggify();>biggify</button>
-<button onclick=smallify();>smallify</button> 
-
-<div id=hello style=";position:absolute">
-  <img id=dog1 src= https://buzzsharer.com/wp-content/uploads/2015/05/cute-white-dog-poodle.jpg>
-</div>
+#dog1{
+  height:300px;
+  
+}

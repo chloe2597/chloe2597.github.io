@@ -1,5 +1,5 @@
 function ScoreQuiz(){
-  alert("in ScoreQuiz 2()");
+  alert("in ScoreQuiz 3()");
   
   var TotalQuestions=4;
   var TotalCorrect=0;
@@ -24,4 +24,21 @@ function ScoreQuiz(){
 
   
 }
+var q3q = document.getElementById("q3q");
+  var q3qText = q3q.innerHTML;
+  
+  var q3 = document.getElementById("q3");
+  var q3UserAnswer = q3.value;
+  var q3Answer = "Je m'appelle";
+  
+  if(q3UserAnswer === q3Answer){
+    var message = "Yes! " + q3Answer + " is French for " + q3qText;
+    alert(message);
+    TotalCorrect = TotalCorrect + 1;
+  }
+  else{
+    var message = "No! " + q3Answer + " is French for " + q3qText;
+    alert(message);
+   
+  }
   

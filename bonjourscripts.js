@@ -1,7 +1,7 @@
 function ScoreQuiz(){
   alert("in ScoreQuiz 3()");
-  
-  var TotalQuestions=4;
+  ///===============================
+    var TotalQuestions=4;
   var TotalCorrect=0;
   
   var q1q = document.getElementById("q1q");
@@ -23,22 +23,27 @@ function ScoreQuiz(){
   }  
 
   
-}
-var q3q = document.getElementById("q3q");
-  var q3qText = q3q.innerHTML;
+  var q2q = document.getElementById("q2q");
+  var q2qText = q2q.innerHTML;
   
-  var q3 = document.getElementById("q3");
-  var q3UserAnswer = q3.value;
-  var q3Answer = "Je m'appelle";
+  var q2 = document.getElementById("q2");
+  var q2UserAnswer = q2.value;
+  var q2Answer = "Au Revoir";
   
-  if(q3UserAnswer === q3Answer){
-    var message = "Yes! " + q3Answer + " is French for " + q3qText;
+  if(q2UserAnswer === q2Answer){
+    var message = "Yes! " + q2Answer + " is French for " + q2qText;
     alert(message);
     TotalCorrect = TotalCorrect + 1;
   }
   else{
-    var message = "No! " + q3Answer + " is French for " + q3qText;
+    var message = "No! " + q2Answer + " is French for " + q2qText;
     alert(message);
    
+  }
+  
+  
+  
+  
+  //==================================
   }
   

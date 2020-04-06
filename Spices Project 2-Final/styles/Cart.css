@@ -1,0 +1,383 @@
+﻿/*by Collin Savunen and Chloe White*/
+
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: "Dancing Script", cursive;
+    font-size: 150%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+body header img {
+    padding-bottom: .2em;
+    margin-bottom: 10px;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* Navigation menu */
+#nav_menu {
+    clear: left;
+    border-bottom: 3px solid brown;
+    z-index: 1;
+    min-width: 1131px;
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+    width: 100%;
+    border-left: 3px solid brown;
+}
+
+#nav_menu ul ul li:last-child {
+    border-bottom: 3px solid brown;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: .7em 0;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+#nav_menu ul li a.current {
+    color: orange;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+}
+/*from w3 schools*/
+/* Page content */
+.content {
+    padding-top: 4em;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.stickycart {
+    z-index: 0;
+    position: sticky;
+    top: 67.2px;
+    width: 24%;
+}
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 6em;
+    }
+
+/* the styles for the header */
+header {
+    padding: .5em 0 1em 0;
+    border-bottom: 3px solid brown;
+    background-color: tan;
+    min-width: 1131px;
+}
+
+    header h2 {
+        font-size: 175%;
+        color: #800000;
+    }
+
+    header h3 {
+        font-size: 130%;
+        font-style: italic;
+        padding-left: 10em;
+    }
+
+    header img {
+        float: left;
+        padding: 0 30px;
+    }
+
+.shadow {
+    text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the main content */
+main {
+    clear: left;
+}
+
+#fname{
+    width: 200px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  width: 30%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  width: 50%;
+  padding-left: 1em;
+}
+
+.col-75 {
+
+  width: 60%;
+  margin-left: 1%;
+}
+
+.container {
+  background-color: tan;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: dimgrey;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: brown;
+}
+
+span.price {
+  color: grey;
+}
+/*style for cart*/
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: block;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+    display:block;
+
+}
+
+.cart-item-image {
+    display:block;
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/* the styles for the footer */
+#footer {
+    border-top: 3px solid brown;
+    background-color: tan;
+    height: auto;
+    clear: both;
+    min-width: 1131px;
+}
+
+#footersec {
+    width: 33.3333333%;
+    height: 162px;
+    float: left;
+    clear: none;
+    background-color: tan;
+}
+
+#footersec figure {
+    padding-top: 1em;
+    padding-right: 1em;
+    color: black;
+}
+
+#footersec a {
+    color: black;
+}
+
+#footersec img {
+    width: 20%;
+    padding: 1em;
+}
+
+#footersec p {
+    text-align: center;
+    color: black;
+    padding: 1em 0;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

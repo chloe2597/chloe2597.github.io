@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<!--by Collin Savunen and Chloe White-->
+<head>
+    <meta charset="utf-8">
+    <title>Spice Bar</title>
+    <link rel="shortcut icon" href="images/spicejars.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/spicejars.jpg" alt="Spice Jars" height="65"></a>
+            <h2>Spice Bar</h2>
+            <h3>A better Way to cook!</h3>
+        </div>
+        <div>
+            <a href="Cart.html" style="float: right"><img src="images/shoppingcart.png" /></a>
+        </div>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html#products">Featured Products</a></li>
+            <li><a href="index.html#about_us">About us</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#footer">Contact us</a></li>
+            <li class="lastitem">
+                <a href="aboutus.html">More</a>
+                <ul>
+                    <li><a href="ourhistory.html">More Products</a></li>
+                    <li><a href="boardofdirectors.html">Food Blog</a></li>
+                    <li><a href="pastspeakers.html">Hire a chef</a></li>
+                    <li><a href="contactinformation.html">Related companies</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1 id="form_h1">Sign up for email offers and the latest news!</h1>
+    <section id="form">
+
+        <form action="sign_up.html" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required placeholder="john@example.com"><br>
+                <label for="phone">Phone Number: </label>
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Must be 999-999-9999 format"><br>
+            </fieldset>
+            <fieldset class="centertext">
+                <legend>Submit</legend>
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+    <footer id="footer">
+        <aside id="footersec">
+            <a href="https://www.google.com/maps/search/3500+MockingBird+Lane,+Springfield,+MI+58585/@42.3246618,-85.2597921,14z/data=!3m1!4b1"><img src="/images/GoogleMap.JPG"></a>
+        </aside>
+        <aside id="footersec">
+            <p>
+                &copy; 2020 Spice Bar
+                <br />
+                3500 MockingBird Lane, Springfield, MI 58585
+                <br />
+                <a href="tel:+5335551212">(533) 555-1212</a>
+            </p>
+        </aside>
+        <aside id="footersec"></aside>
+    </footer>
+</body>
+</html>

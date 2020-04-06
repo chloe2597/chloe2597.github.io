@@ -1,0 +1,527 @@
+/*by Collin Savunen and Chloe White*/
+
+/* the styles for the elements */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        background-color: white;
+    }
+
+body {
+    font-family: "Dancing Script", cursive;
+    font-size: 150%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/*Add to cart buttons*/
+.container {
+  position: relative;
+}
+
+.p {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .p {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  display: block;
+  position: absolute
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: 3px solid brown;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.middle input{
+    width: auto;
+    margin-bottom: .5em;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+/*end add to cart buttons*/
+
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* Navigation menu */
+#nav_menu {
+    clear: left;
+    border-bottom: 3px solid brown;
+    min-width: 1131px;
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+    width: 100%;
+    border-left: 3px solid brown;
+}
+
+#nav_menu ul ul li:last-child {
+    border-bottom: 3px solid brown;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: .7em 0;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+#nav_menu ul li a.current {
+    color: orange;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+}
+/*from w3 schools*/
+/* Page content */
+.content {
+    padding-top: 4em;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 6em;
+}
+
+/* the styles for the header */
+header {
+    padding: .5em 0 1em 0;
+    border-bottom: 3px solid brown;
+    background-color: tan;
+    height: 88px;
+    min-width: 1131px;
+}
+
+body header div{
+    display: block;
+    float: left;
+    width:49%;
+}
+
+header h2 {
+    font-size: 175%;
+    color: #800000;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    padding-left: 10em;
+}
+
+header img {
+    float: left;
+    padding: 0 30px;
+    height: 65px;
+}
+
+header figure {
+    float: left;
+    color: black;
+}
+
+.shadow {
+    text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the main content */
+main {
+    clear: left;
+}
+/* the styles for the products section */
+#products aside {
+    width: 33%;
+    float: left;
+    padding: 0;
+    height: 50%;
+}
+.noshow {
+    display: none;
+}
+
+#products aside img {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#products aside h3 {
+    text-align: center;
+}
+
+#products aside p {
+    text-align: center;
+    font-size: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+            
+}
+
+#products aside a {
+    color: black;
+    text-decoration: none;
+}
+
+#products aside img:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+    height: 150.4px;
+}
+
+.new_row {
+    clear: left;
+}
+
+/* the styles for the section */
+section {
+    width: 100%;
+    clear: both;
+    min-height: 90vh;
+}
+
+section h1 {
+    font-size: 150%;
+    padding: .5em 0 .25em 0;
+    margin: 0; /* If you remove this, the margins in normalize.css will be applied. */
+}
+
+section h2 {
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+
+section ul {
+    padding: 0 0 .25em 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+/* the styles for the about us */
+#about_us {
+    min-height: 90vh;
+    background-color: tan;
+}
+
+#about_us h1 {
+    padding-left: 1em;
+}
+
+#about_us h2 {
+    padding-left: 1.5em;
+}
+
+#about_us h3 {
+    padding-left: 3em;
+}
+
+#about_us p {
+    padding-left: 1em;
+}
+
+#about_us img {
+    margin-right: 1em;
+    width: 30%;
+}
+
+article {
+    padding: .5em 0;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+article h2 {
+    padding-top: 0;
+}
+
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+article img {
+    float: right;
+    margin: .5em 0 1em 1em;
+    border: 1px solid brown;
+    width: 300px;
+}
+
+/* the styles for the aside */
+aside {
+    width: 30%;
+    float: left;
+}
+
+    aside h2 {
+        color: black;
+        font-size: 130%;
+        padding: .5em 0 .25em 0;
+    }
+
+    aside h3 {
+        font-size: 105%;
+        padding-bottom: .25em;
+    }
+
+
+
+/*Table formatting*/
+#pricing {
+    font-size: 150%
+}
+
+
+figure {
+    margin-top: 0;
+}
+
+figcaption {
+    border-bottom: 3px solid brown;
+    font-weight: bold;
+}
+
+table {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+table thead {
+    border-bottom: 2px solid brown;
+}
+
+table td:first-child {
+    border-right: 2px solid brown;
+    font-weight: bold
+}
+
+#pricing aside {
+    width: 50%;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+#pricing ul {
+    display: block;
+    float: left;
+    margin-right: 1em;
+}
+
+#pricing img {
+    display: block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+}
+
+/*
+table thead{
+background-color: tan;
+/*darkkhaki*/
+
+
+table thead td:first-child {
+    background-color: white;
+}
+
+table tbody tr:nth-child(2n+1) {
+    background-color: tan;
+}
+
+
+
+/* the styles for the footer */
+#footer {
+    border-top: 3px solid brown;
+    background-color: tan;
+    height: auto;
+    clear: both;
+    min-width: 1131px;
+}
+
+#footersec {
+    width: 33.3333333%;
+    height: 162px;
+    float: left;
+    clear: none;
+    background-color: tan;
+}
+
+#footersec figure {
+    padding-top: 1em;
+    padding-right: 1em;
+    color: black;
+}
+
+#footersec a {
+    color: black;
+}
+
+#footersec img {
+    width: 20%;
+    padding: 1em;
+}
+
+#footersec p {
+    text-align: center;
+    color: black;
+    padding: 1em 0;
+}
+
+/*syles for the form*/
+#form {
+    text-align: center;
+    min-width: 1000px;
+}
+
+form {
+    width: 50%;
+    background-color: tan;
+    text-align: center;
+    margin: auto;
+
+}
+
+#form_h1 {
+    text-align: center;
+    min-width: 1000px;
+}
+
+fieldset {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+input {
+    width: 15em; 
+    margin-bottom: .5em;
+}
+
+label{
+    width: 12em;
+}
+
+legend {
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    width:100%;
+    text-decoration: underline;
+}
+
+#buttons input {
+    width: 15em
+}
+
+input:required, input[required] {
+    border: 2px solid brown;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+input:invalid {
+    background-color: brown;
+}
+
+
+
+

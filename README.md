@@ -1,3 +1,3 @@
-Chloe White 
-Email: chloe.jeigh@gmail.com 
-Phone: (360) 878-7050
+# Chloe White 
+# Email: chloe.jeigh@gmail.com 
+# Phone: (360) 878-7050
